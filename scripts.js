@@ -16,6 +16,16 @@ document.addEventListener('DOMContentLoaded', function() {
   const lightboxCaption = document.getElementById('lightbox-caption');
   const prevArrow = document.querySelector('.lightbox-prev');
   const nextArrow = document.querySelector('.lightbox-next');
+  // Mobile nav toggle
+const header = document.querySelector('.navbar');
+const toggle = document.querySelector('.nav-toggle');
+if (header && toggle) {
+  toggle.addEventListener('click', () => {
+    const open = header.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    document.body.classList.toggle('body-lock', open);
+  });
+}
 
   // Variables to hold currently active group and index
   let currentGroup = [];
