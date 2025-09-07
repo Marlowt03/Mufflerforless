@@ -69,24 +69,31 @@
 </head>
 <body>
   <!-- Navigation bar with logo and links -->
-  <header class="navbar">
-    <div class="logo">
-      <!-- Use the high resolution local logo rather than the cropped Wix version -->
-      <a href="index.html">
-        <img src="assets/logo.avif" alt="Mufflers For Less logo">
-      </a>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="david-challenge.html">The David Challenge</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </nav>
-  </header>
+<header class="navbar">
+  <div class="logo">
+    <a href="index.html">
+      <img src="assets/logo.avif" alt="Mufflers For Less logo">
+    </a>
+  </div>
 
+  <!-- Mobile menu toggle button -->
+  <button class="nav-toggle" aria-expanded="false" aria-label="Toggle menu">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="david-challenge.html">The David Challenge</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
+  
   <!-- Hero banner: special treatment for the home page so the dark overlay only applies here -->
   <section class="hero home-hero">
     <video src="assets/header-video.mov" autoplay muted loop playsinline preload="metadata" poster="assets/shop-building.jpg" autoplay muted loop playsinline preload="metadata"></video>
